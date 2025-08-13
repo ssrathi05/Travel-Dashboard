@@ -15,6 +15,7 @@ const TripCard = ({
   price,
 }: TripCardProps) => {
   const path = useLocation();
+
   return (
     <Link
       to={
@@ -28,7 +29,6 @@ const TripCard = ({
 
       <article>
         <h2>{name}</h2>
-
         <figure>
           <img
             src="/assets/icons/location-mark.svg"
@@ -40,7 +40,7 @@ const TripCard = ({
       </article>
 
       <div className="mt-5 pl-[18px] pr-3.5 pb-5">
-        <ChipListComponent id={`travel-chip-${id}`}>
+        <ChipListComponent id="travel-chip">
           <ChipsDirective>
             {tags?.map((tag, index) => (
               <ChipDirective
