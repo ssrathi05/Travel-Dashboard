@@ -1,7 +1,5 @@
 import { StatsCard, TripCard } from "components";
 import Header from "components/header";
-import { Stats } from "fs";
-import React from "react";
 import { dashboardStats, user, allTrips } from "~/constants";
 
 const Dashboard = () => {
